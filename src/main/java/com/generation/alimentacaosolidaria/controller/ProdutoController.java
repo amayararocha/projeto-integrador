@@ -35,7 +35,11 @@ public class ProdutoController {
 	@Autowired
 	private CategoriaRepository categoriaRepository;
 
+<<<<<<< HEAD
 	@GetMapping("/todosprodutos")
+=======
+	@GetMapping
+>>>>>>> 75d753a74683bf605ff02ac1b56386347f4150af
 	public ResponseEntity<List<Produto>> getAll() {
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
