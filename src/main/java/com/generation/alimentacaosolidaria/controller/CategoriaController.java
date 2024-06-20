@@ -68,6 +68,7 @@ public class CategoriaController {
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
 	
+	@ResponseStatus(HttpStatus.NO_CONTENT)
 	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable Long id){
